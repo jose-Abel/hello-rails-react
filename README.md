@@ -1,24 +1,111 @@
-# README
+# Hello Rails-React - Jose Abel Ramirez Frontany
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Project to set up a "Hello world" with rails-react gem. It consist of 2 routes, the root that's connected to the HomeController index action, and the RandomGreetingsController index action. The RandomGreetings is call within React components, since the view for the root page is rendering the App component, which is the Router for the React side of the Full Stack App. 
 
-Things you may want to cover:
+The React state is managed with Redux, so every time the page refresh, the Greeting component dispatch an action through the redux configuration, to the /random_greetings route that is in charge of getting a sample from all the Greetings in the Postgres Database. 
 
-* Ruby version
+## Built With
 
-* System dependencies
+- rails-react
+- react-dom
+- redux
+- react-router
+- fetch
+- HTML
+- CSS
+- rspec
+- ffaker
+- factory_bot_rails
 
-* Configuration
+## Documentation
 
-* Database creation
+- https://www.coingecko.com/en/api/documentation
 
-* Database initialization
 
-* How to run the test suite
+## Getting Started
 
-* Services (job queues, cache servers, search engines, etc.)
+To get a local copy up and running follow these simple example steps.
 
-* Deployment instructions
+### Setup
 
-* ...
+Go to the top of the page, press te green button that says "Code", and copy the link. Then you have to go to your console and type
+
+```
+    git clone 'repository-link'
+```
+
+That's all, you are ready to go!
+
+
+### Install
+
+Run the following command to have all yarn packages dependencies installed:
+
+```
+    bundle install
+```
+
+```
+    npm install
+```
+
+```
+    rails db:create
+```
+
+
+```
+    rails db:migrate
+```
+
+
+```
+    rails db:seed
+```
+
+### Usage
+
+To run the "react-scripts start" script, type the following command:
+
+```
+    rails s
+```
+
+### Tests with React Testing Library
+
+To run the rspec test files for Rails controller type the following
+
+```
+    rspec
+```
+
+### Linters
+
+To run the Rails Rubocop rules, type the following
+
+```
+    rubocop
+```
+
+To run the CSS linters type the following
+
+```
+    npx stylelint "**/*.{css,scss}"
+```
+
+## Author: Jose Abel Ramirez Frontany\*\*
+
+- GitHub: [Jose Abel Ramirez Frontany](https://github.com/jose-Abel)
+- Linkedin: [Jose Abel Ramirez Frontany](www.linkedin.com/in/joseabelramirezfrontany)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 📝 License
+
+This project is MIT licensed.
+
+## Show your support
+
+Give a ⭐️ if you like this project!
