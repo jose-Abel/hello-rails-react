@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe RandomGreetingsController, type: :controller do
   describe 'GET #index' do
     let!(:hello) { create(:greeting, message: 'Hello!') }
-    let!(:ciao) { create(:greeting, message: 'Diao!') }
+    let!(:ciao) { create(:greeting, message: 'Ciao!') }
     let!(:hola) { create(:greeting, message: 'Hola!') }
     let!(:gutten_morgen) { create(:greeting, message: 'Hallo!') }
     let!(:bonjour) { create(:greeting, message: 'Bonjour!') }
