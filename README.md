@@ -1,6 +1,6 @@
 # Hello Rails-React - Jose Abel Ramirez Frontany
 
-Project to set up a "Hello world" with rails-react gem. It consist of 2 routes, the root that's connected to the HomeController index action, and the RandomGreetingsController index action. The RandomGreetings is call within React components, since the view for the root page is rendering the App component, which is the Router for the React side of the Full Stack App. 
+Project to set up a "Hello world" with rails-react gem. It consist of 2 routes, the root that's connected to the HomeController index action, and the RandomGreetingsController index action. The home/index View is rendering the App React Component, which is the Router for the React side of the Full Stack App with the only route of the home page to render the Greeting component, but with a structure to scale to add more routes. 
 
 The React state is managed with Redux, so every time the page refresh, the Greeting component dispatch an action through the redux configuration, to the /random_greetings route that is in charge of getting a sample from all the Greetings in the Postgres Database. 
 
