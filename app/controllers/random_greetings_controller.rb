@@ -1,5 +1,7 @@
 class RandomGreetingsController < ApplicationController
+  include Response
+
   def index
-    byebug
+    json_response(Greeting.all.sample)
   end
 end
