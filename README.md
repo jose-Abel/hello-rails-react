@@ -19,7 +19,7 @@ The React state is managed with Redux, so every time the page refresh, the Greet
 
 ## Documentation
 
-- https://www.coingecko.com/en/api/documentation
+- https://github.com/reactjs/react-rails
 
 
 ## Getting Started
